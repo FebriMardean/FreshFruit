@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FreshFruit"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="471.025" Width="656">
     <Grid>
-        
+        <Button Content="Add" HorizontalAlignment="Left" Margin="34,209,0,0" VerticalAlignment="Top" Width="74" Click="Button_Click"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="180,209,0,0" VerticalAlignment="Top" Width="74" Click="Button_Click_1"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="33,340,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="180,340,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_3"/>
+        <Image HorizontalAlignment="Left" Height="77" Margin="34,122,0,0" VerticalAlignment="Top" Width="74" Source="Assets/anggur.jpg"/>
+        <Label Content="Fruit Shop" HorizontalAlignment="Left" Margin="24,26,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Fresh and Healty" HorizontalAlignment="Left" Margin="33,68,0,0" VerticalAlignment="Top" FontSize="11"/>
+        <Label Content="Hi, its your Buckets!" HorizontalAlignment="Left" Margin="364,122,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <ListBox x:Name="ListBoxBucket" HorizontalAlignment="Left" Height="146" Margin="364,153,0,0" VerticalAlignment="Top" Width="248">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="{Binding name}" TextAlignment="Left"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Image HorizontalAlignment="Left" Height="76" Margin="180,122,0,0" VerticalAlignment="Top" Width="74" Source="Assets/apple.png"/>
+        <Image HorizontalAlignment="Left" Height="71" Margin="34,252,0,0" VerticalAlignment="Top" Width="74" Source="Assets/banana.jpg"/>
+        <Image HorizontalAlignment="Left" Height="71" Margin="180,252,0,0" VerticalAlignment="Top" Width="75" Source="Assets/orange.png"/>
+
     </Grid>
 </Window>
